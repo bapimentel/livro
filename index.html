@@ -145,13 +145,57 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </section>
 
-  <!-- Testimonials / Reviews Placeholder -->
-  <section class="py-12 px-6 md:px-12 lg:px-24">
-    <div class="max-w-5xl mx-auto text-center fade-in">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8">O que os leitores dizem</h2>
-      <p class="italic text-gray-600">“Ainda sem avaliações – seja o primeiro a deixar sua resenha na Amazon!”</p>
-    </div>
-  </section>
+
+
+  <!-- Testimonials / Reviews -->
+<section class="py-12 px-6 md:px-12 lg:px-24">
+  <!-- Título da seção -->
+  <div class="max-w-5xl mx-auto text-center mb-12">
+    <h2 class="text-2xl md:text-3xl font-bold">O que os leitores dizem</h2>
+    <p class="italic text-gray-600">Avaliações diretas da Amazon</p>
+  </div>
+
+  <!-- Grid de depoimentos -->
+  <ul class="grid gap-8 justify-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto fade-in">
+    <!-- Review – Thiago Guimarães -->
+    <li class="bg-white rounded-2xl shadow-md p-6 flex flex-col w-full sm:max-w-md">
+      <figure class="flex-1">
+        <!-- Nome + Estrelas -->
+        <figcaption class="mb-3">
+          <span class="font-semibold">Thiago Guimarães</span>
+          <span class="sr-only"> – 5 de 5 estrelas</span>
+          <div class="flex gap-0.5 text-yellow-400 text-sm mt-1" aria-hidden="true">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </figcaption>
+
+        <!-- Título da avaliação (link) -->
+        <a href="https://www.amazon.com.br/dp/6501351715#customerReviews"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-block font-semibold hover:underline">
+          Leitura obrigatória
+        </a>
+
+        <!-- Data -->
+        <p class="text-xs text-gray-500 mt-1">
+          Avaliado no Brasil em 24 de junho de 2025
+        </p>
+
+        <!-- Corpo da avaliação -->
+        <blockquote class="text-gray-800 leading-relaxed mt-4">
+          Aqui encontrei um guia completo de todo o ciclo de vida de um projeto
+          de dados, desde a coleta até a tomada de decisão. Os estudos de caso —
+          aeroportos, consumo de energia, varejo — mostram passo a passo como
+          extrair insights que impactam o negócio. Recomendo a quem precisa sair
+          do ‘mundo das métricas’ e falar a linguagem dos gestores.
+        </blockquote>
+      </figure>
+    </li>
+
+    <!-- Adicione novos <li> aqui para outros reviews -->
+  </ul>
+</section>
+
 
   <!-- FAQ Section -->
   <section class="bg-gray-100 py-12 px-6 md:px-12 lg:px-24">
